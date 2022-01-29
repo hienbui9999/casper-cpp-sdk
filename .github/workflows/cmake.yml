@@ -27,8 +27,14 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
-
+      #run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+      run: cmake -DCMAKE_BUILD_TYPE=Debug .
+      
+    - name: Make all
+     
+      run: make all
+    - name: Make test 
+      run: make test
     - name: Test
       working-directory: ${{github.workspace}}/build
       # Execute tests defined by the CMake configuration.  
