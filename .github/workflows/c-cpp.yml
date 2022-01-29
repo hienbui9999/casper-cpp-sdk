@@ -21,3 +21,9 @@ jobs:
       run: make check
     - name: make distcheck
       run: make distcheck
+    - name: build debug
+      run: cmake -DCMAKE_BUILD_TYPE=Debug .
+    - name: make all
+      run: make all
+    - name: test
+      run: make test
