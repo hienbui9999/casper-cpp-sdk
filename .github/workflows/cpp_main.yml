@@ -35,7 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-          cmake -DCMAKE_BUILD_TYPE=Release .
-          make all
+cmake -DCMAKE_BUILD_TYPE=Debug .
+make all
+make test
           
           
