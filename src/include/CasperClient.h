@@ -16,7 +16,7 @@
 #include "jsonrpccxx/client.hpp"
 #include "nlohmann/json.hpp"
 
-#define CASPER_TEST_ADDRESS "http://127.0.0.1:7777"
+#define CASPER_TEST_ADDRESS "https://node-clarity-testnet.make.services"
 
 namespace Casper {
 class Client {
